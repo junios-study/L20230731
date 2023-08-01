@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class MissleMovement : MonoBehaviour
 {
@@ -17,12 +18,13 @@ public class MissleMovement : MonoBehaviour
 
     
 
+
     // Update is called once per frame
     void Update()
     {
-        //Vector3.up
-        transform.Translate(Time.deltaTime * moveSpeed * transform.up, Space.World);
+        //transform.Translate(Time.deltaTime * moveSpeed * transform.up, Space.World);
         //transform.position += Time.deltaTime * moveSpeed * transform.up;
+
         //transform.Translate(Time.deltaTime * moveSpeed * Vector3.up, Space.Self);
         transform.Translate(Time.deltaTime * moveSpeed * Vector3.up);
 
