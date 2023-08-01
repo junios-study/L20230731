@@ -31,7 +31,7 @@ public class PlaneController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(Time.deltaTime * rotateSpeed * Vector3.back);
+            transform.Rotate(Time.deltaTime * rotateSpeed * -Vector3.forward);
         }
 
         if (Input.GetKeyDown(KeyCode.C))

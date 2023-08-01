@@ -27,6 +27,7 @@ public class Shooter : MonoBehaviour
                 GameObject newMissle = Instantiate(missle);
                 newMissle.transform.position = spawnPoint.transform.position;
                 newMissle.transform.rotation = spawnPoint.transform.rotation;
+                //newMissle.GetComponent<MissleMovement>().missleDirection = spawnPoint.transform.up;
             }
         }
     }
